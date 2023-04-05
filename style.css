@@ -112,3 +112,23 @@ footer {
      transform: translateY(-50%);
      color: #ffffff;
   }
+
+  @media screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    header {
+      font-size: 1.5rem;
+    }
+    .container {
+      font-size: 20px;
+      padding: 10px;
+    }
+    .riddle {
+      padding: 10px;
+    }
+    .hint-button {
+      font-size: 14px;
+    }
+    .hint-text {
+      font-size: 12px;
+    }
+  }
