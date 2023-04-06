@@ -1,6 +1,14 @@
 /* Style the body and header */
+@font-face {
+  font-family: 'CustomFont'; /* Define a custom name for the font */
+  src: url('./fonts/BalooBhaijaan2-Bold.ttf'); /* Path to the font file in your project directory */
+}
+@font-face {
+  font-family: 'CustomFont2'; /* Define a custom name for the font */
+  src: url('./fonts/BalooBhaijaan2-Regular.ttf'); /* Path to the font file in your project directory */
+}
 body {
-  background-color: #000;
+  background-color: #807a7a;
   background-size: cover;
   background-position: center;
   font-family: Roboto, sans-serif;
@@ -11,7 +19,8 @@ text-align: center;
 padding: 0px;
 font-size: 2rem;
 font-weight: bold;
-text-shadow: 2px 2px #000;
+text-shadow: 4px 4px #000;
+font-family: CustomFont;
 }
 /* Style the container and riddle */
 .container {
@@ -20,7 +29,7 @@ max-width: 960px;
 padding: 20px;
   color: #ffffff;
   font-size: 25px;
-  font-family: Roboto, sans-serif;
+  font-family:CustomFont2;
 }
 
 h2 {
@@ -72,10 +81,13 @@ font-size: 1rem;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  font-family: CustomFont2;
 }
 
 /* Style the hint button */
 .hint-button {
+  font-weight: bold;
+  font-family: CustomFont;
   background-color: #323232;
   border: none;
   color: white;
@@ -87,6 +99,8 @@ font-size: 1rem;
   margin-bottom: 10px;
   cursor: pointer;
   border-radius: 12px;
+  background-color: #e0f121;
+  text-shadow: 2px 2px #000;
 }
 
 /* Style the hint text */
