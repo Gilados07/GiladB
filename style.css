@@ -25,8 +25,9 @@ font-family: CustomFont;
 /* Style the container and riddle */
 .container {
 margin: 0 auto;
+margin-top: 1px;
 max-width: 960px;
-padding: 20px;
+padding: 1px;
   color: #ffffff;
   font-size: 25px;
   font-family:CustomFont2;
@@ -41,6 +42,7 @@ text-align: center;
 }
 
 .riddle {
+  margin-top: 1px;
 margin-bottom: 20px;
 padding: 20px;
 position: relative;
@@ -82,6 +84,7 @@ font-size: 1rem;
   align-items: center;
   margin-top: 20px;
   font-family: CustomFont2;
+  
 }
 
 /* Style the hint button */
@@ -89,7 +92,6 @@ font-size: 1rem;
   font-weight: bold;
   font-family: CustomFont;
   background-color: #323232;
-  border: none;
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -100,12 +102,34 @@ font-size: 1rem;
   cursor: pointer;
   border-radius: 12px;
   background-color: #e0f121;
-  text-shadow: 2px 2px #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  border: none;
 }
-
+.EasyHard{
+  font-weight: bold;
+  font-family: CustomFont;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+.EasyHard2{
+  font-weight: bold;
+  font-family: CustomFont;
+  background-color: #323232;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #e0f121;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  border: none;
+}
 /* Style the hint text */
 .hint-text {
-  display: none;
   font-size: 14px;
 }
 /* Custom riddle title font size */
