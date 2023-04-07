@@ -221,5 +221,15 @@ color: white;
   .hint-button {
     font-size: 14px;
     padding: 8px 16px;
+    justify-content: center;
+    align-items: center;   
   }
+  footer {
+    color: #fff;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 1rem;
+    bottom:0;
+    position: absolute;
+    }
 }
