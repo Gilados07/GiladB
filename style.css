@@ -47,7 +47,7 @@ align-items: center;
 
 }
 .nextriddle{
-  margin-left: 13px;
+  margin-left: 15px;
   font-weight: bold;
   font-family: CustomFont;
   color: white;
@@ -231,5 +231,11 @@ color: white;
     justify-content: center;
     align-items: center;   
   }
+  .nextriddle{
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: CustomFont;
+    color: white;
+  } 
 
 }
