@@ -45,7 +45,7 @@ font-family: CustomFont;
 margin: 0 auto;
 margin-top: 1px;
 max-width: 960px;
-padding: 1px;
+padding-top: 1px;
 color: #ffffff;
 font-size: 25px;
 font-family:CustomFont2;
@@ -96,6 +96,7 @@ font-size: 1rem;
 /* Center the riddle and the hint container */
 .riddle {
   text-align: center;
+  padding:0%;
 }
 
 .hint-container {
@@ -105,7 +106,7 @@ font-size: 1rem;
   align-items: center;
   margin-top: 20px;
   font-family: CustomFont2;
-  
+  padding:0%;
 }
 
 /* Style the hint button */
@@ -131,7 +132,7 @@ font-size: 1rem;
   font-weight: bold;
   font-family: CustomFont;
   color: white;
-  padding: 50px;
+  padding-top: 70px;
   text-align: center;
   z-index: 2;
 }
