@@ -30,17 +30,18 @@ align-items: center;
   font-family: CustomFont;
   background-color: #323232;
   color: white;
-  
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  
-  
+  display: flex;
+  font-size: 25px;
+  width: 120px; /* Set the width to 120 pixels */
+  height: 30px; /* Set the height to 40 pixels */
   border-radius: 12px;
   background-color: #e0f121;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 10);
   border: none;
+  justify-content: center;
+  align-items: center;
 
 }
 header {
@@ -54,31 +55,22 @@ font-family: CustomFont;
 }
 /* Style the container and riddle */
 .container {
-
-
 max-width: 960px;
-
 color: #ffffff;
 font-size: 25px;
 font-family:CustomFont2;
-
 }
-
 h2 {
-
 font-size: 2rem;
 font-weight: bold;
 text-transform: uppercase;
 text-align: center;
 }
 
-
-
 /* Style the hint trigger and content */
 .hint-trigger {
 font-style: italic;
 font-size: 1.2rem;
-
 cursor: pointer;
 }
 
@@ -86,21 +78,20 @@ cursor: pointer;
 display: none;
 font-style: italic;
 font-size: 1.2rem;
-
 }
 
 /* Style the footer */
 footer {
-background-color: #333;
 color: #fff;
 text-align: center;
-
+align-items: flex-end;
 font-size: 1rem;
+bottom:0;
+position: absolute;
 }
 /* Center the riddle and the hint container */
 .riddle {
   text-align: center;
-  
 }
 
 .hint-container {
@@ -108,9 +99,7 @@ font-size: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
   font-family: CustomFont2;
-  
 }
 
 /* Style the hint button */
@@ -119,18 +108,20 @@ font-size: 1rem;
   font-family: CustomFont;
   background-color: #323232;
   color: white;
-  
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  
-  cursor: pointer;
+  cursor: pointer;  
   border-radius: 12px;
   background-color: #e0f121;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
   border: none;
   z-index: 2;
+  width: 90px; /* Set the width to 120 pixels */
+  height: 30px; /* Set the height to 40 pixels */
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 .EasyHard{
   font-weight: bold;
@@ -138,31 +129,38 @@ font-size: 1rem;
   color: white;
   text-align: center;
   z-index: 2;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
 }
 .EasyHard2{
+  width: 120px; /* Set the width to 120 pixels */
+  height: 35px; /* Set the height to 40 pixels */
   z-index: 2;
   font-weight: bold;
   font-family: CustomFont;
   background-color: #323232;
   color: white;
-  
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  
+  font-size: 22px;
   cursor: pointer;
   border-radius: 12px;
   background-color: #e0f121;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
   border: none;
+  justify-content: center;
+  align-items: center;
 }
 /* Style the hint text */
 .hint-text {
   font-size: 14px;
+  margin-bottom: 15px;
 }
 /* Custom riddle title font size */
 .riddle-title {
   font-size: 25px;
+  margin-bottom: 40px;
 }
 #ad-container {
   display: none;
@@ -176,186 +174,52 @@ font-size: 1rem;
    transform: translateY(-50%);
    color: #ffffff;
 }
-
-@media screen and (max-width: 768px) {
-  /* Styles for screens smaller than 768px */
-  *{
-    padding: 0px;
-    margin: 0px;
-  }
-  /* Style the body and header */
-  @font-face {
-    font-family: 'CustomFont'; /* Define a custom name for the font */
-    src: url('./fonts/BalooBhaijaan2-Bold.ttf'); /* Path to the font file in your project directory */
-  }
-  @font-face {
-    font-family: 'CustomFont2'; /* Define a custom name for the font */
-    src: url('./fonts/BalooBhaijaan2-Regular.ttf'); /* Path to the font file in your project directory */
-  }
-  body {
-    background-color: #807a7a;
-    background-size: cover;
-    background-position: center;
-    font-family: Roboto, sans-serif;
-  }
-  
-  .all{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-  }
-  
-  .timer{
-    font-weight: bold;
-    font-family: CustomFont;
-    background-color: #323232;
-    color: white;
-    
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    
-    
-    border-radius: 12px;
-    background-color: #e0f121;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
-    border: none;
-  
-  }
-  header {
-  color: #e0f121;
-  text-align: center;
-  
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 4px 4px #000;
+.InsertText{
+  outline: none;
+  border: 2px solid white;
   font-family: CustomFont;
-  }
-  /* Style the container and riddle */
-  .container {
-  
-  
-  max-width: 960px;
-  
-  color: #ffffff;
+  text-align: center;
+  display: flex;
   font-size: 25px;
-  font-family:CustomFont2;
-  
-  }
-  
-  h2 {
-  
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: #807a7a;
+  color: white;
+  margin-bottom: 5px;
+}
+.InsertText::placeholder{
+color: white;
+}
+.Submit{
+  border: 2px solid white;
+  font-family: CustomFont;
   text-align: center;
-  }
-  
-  
-  
-  /* Style the hint trigger and content */
-  .hint-trigger {
-  font-style: italic;
-  font-size: 1.2rem;
-  
+  display: flex;
+  font-size: 13px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #807a7a;
+  color: white;
+  width: 60px;
   cursor: pointer;
+  margin-bottom: 2px;
+}
+@media only screen and (max-width: 600px) {
+  /* Styles for screens with maximum width of 600 pixels */
+  header {
+    font-size: 1.5rem;
   }
-  
+  .container {
+    font-size: 20px;
+  }
+  .hint-trigger,
   .hint-content {
-  display: none;
-  font-style: italic;
-  font-size: 1.2rem;
-  
+    font-size: 1rem;
   }
-  
-  /* Style the footer */
-  footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  
-  font-size: 1rem;
-  }
-  /* Center the riddle and the hint container */
-  .riddle {
-    text-align: center;
-    
-  }
-  
-  .hint-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    font-family: CustomFont2;
-    
-  }
-  
-  /* Style the hint button */
   .hint-button {
-    font-weight: bold;
-    font-family: CustomFont;
-    background-color: #323232;
-    color: white;
-    
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    
-    cursor: pointer;
-    border-radius: 12px;
-    background-color: #e0f121;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
-    border: none;
-    z-index: 2;
-  }
-  .EasyHard{
-    font-weight: bold;
-    font-family: CustomFont;
-    color: white;
-    text-align: center;
-    z-index: 2;
-  }
-  .EasyHard2{
-    z-index: 2;
-    font-weight: bold;
-    font-family: CustomFont;
-    background-color: #323232;
-    color: white;
-    
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    
-    cursor: pointer;
-    border-radius: 12px;
-    background-color: #e0f121;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
-    border: none;
-  }
-  /* Style the hint text */
-  .hint-text {
     font-size: 14px;
+    padding: 8px 16px;
   }
-  /* Custom riddle title font size */
-  .riddle-title {
-    font-size: 25px;
-  }
-  #ad-container {
-    display: none;
-    width: 100%;
-    height: 250px;
-    
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-     left: 0;
-     transform: translateY(-50%);
-     color: #ffffff;
-  }
-  
 }
