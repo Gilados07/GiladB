@@ -109,7 +109,7 @@ font-size: 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;  
   border-radius: 12px;
   background-color: #e0f121;
@@ -217,9 +217,11 @@ color: white;
     font-size: 1rem;
   }
   .hint-button {
-    font-size: 20px;
+    width: 60px;
+    font-size: 14px;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;   
   }
+
 }
