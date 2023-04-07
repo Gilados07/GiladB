@@ -124,7 +124,7 @@ font-size: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
   border: none;
   z-index: 2;
-  width: 70px; /* Set the width to 120 pixels */
+  width: 80px; /* Set the width to 120 pixels */
   height: 40px; /* Set the height to 40 pixels */
   margin-bottom: 15px;
   margin-top: 10px;
@@ -225,14 +225,14 @@ color: white;
     font-size: 1rem;
   }
   .hint-button {
-    width: 200px;
+    width: 100px;
     font-size: 14px;
     padding: 8px 16px;
     justify-content: center;
     align-items: center;   
   }
   .nextriddle{
-    margin-left: 8px;
+    margin-left: 15px;
     font-weight: bold;
     font-family: CustomFont;
     color: white;
