@@ -47,12 +47,11 @@ align-items: center;
 
 }
 .nextriddle{
-  margin-top: 5px;
-  margin-left: 16px;
+  margin-left: 15px;
   font-weight: bold;
   font-family: CustomFont;
   color: white;
-}
+} 
 header {
 color: #e0f121;
 text-align: center;
