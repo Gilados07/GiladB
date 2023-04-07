@@ -222,10 +222,4 @@ color: white;
     justify-content: center;
     align-items: center;   
   }
-  footer {
-    color: #fff;
-    text-align: center;
-    align-items: flex-end;
-    font-size: 1rem;  
-    }
 }
