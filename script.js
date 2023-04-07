@@ -7,6 +7,18 @@ var hintText = document.querySelector('.hint-text');
 // Hide the hint text initially
 hintText.style.display = 'none';
 
+// Add click event listener to hint button
+hintButton.addEventListener('click', function() {
+  // Toggle the display of hint text
+  if (hintText.style.display === 'none') {
+    hintText.style.display = 'block';
+    hintButton.textContent = 'Close Hint';
+  } else {
+    hintText.style.display = 'none';
+    hintButton.textContent = 'Hint';
+  }
+});
+
 // Get DOM elements
 const Easy = document.getElementById('Easy');
 const Hard = document.getElementById('Hard');
