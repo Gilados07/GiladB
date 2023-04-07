@@ -86,8 +86,6 @@ color: #fff;
 text-align: center;
 align-items: flex-end;
 font-size: 1rem;
-bottom:0;
-position: absolute;
 }
 /* Center the riddle and the hint container */
 .riddle {
@@ -228,8 +226,6 @@ color: white;
     color: #fff;
     text-align: center;
     align-items: flex-end;
-    font-size: 1rem;
-    bottom:0;
-    position: absolute;
+    font-size: 1rem;  
     }
 }
