@@ -40,3 +40,30 @@ Hard.addEventListener('click', () => {
   document.querySelector('.riddle-title').textContent = "This is a new riddle for Hard mode!";
   document.querySelector('.hint-text').textContent = "This is a new hint text for Hard mode!";
 });
+//timer build
+var timer = document.getElementById("timer");
+var target = new Date(); // Set the target time to the current time
+target.setHours(12, 0, 0, 0); // Set the target time to 12:00 AM (midnight)
+var interval = setInterval(updateTimer, 1000); // Update the timer every 1 second
+
+function updateTimer() {
+    var now = new Date(); // Get the current date and time
+
+    var timerValue = Math.floor((target.getTime() + (6 * 60 * 60 * 1000) - now.getTime()) / 1000); // Calculate the remaining time in seconds, adding 6 hours
+
+    if (timerValue <= 0) {
+        clearInterval(interval); // Stop the timer when it reaches 0
+        timer.textContent = '00:00:00';
+        alert("Timer finished!");
+        return;
+    }
+
+    var hours = Math.floor(timerValue / 3600); // Calculate hours
+    var minutes = Math.floor((timerValue % 3600) / 60); // Calculate minutes
+    var seconds = timerValue % 60; // Calculate seconds
+
+    // Display hours, minutes, and seconds with leading zeros if needed
+    timer.textContent = ('0' + hours).slice(-2) + ':' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2);
+}
+
+

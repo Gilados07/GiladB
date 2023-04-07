@@ -13,6 +13,24 @@ body {
   background-position: center;
   font-family: Roboto, sans-serif;
 }
+.timer{
+  font-weight: bold;
+  font-family: CustomFont;
+  background-color: #323232;
+  color: white;
+  padding: 1px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+  background-color: #e0f121;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  border: none;
+
+}
 header {
 color: #e0f121;
 text-align: center;
@@ -28,9 +46,10 @@ margin: 0 auto;
 margin-top: 1px;
 max-width: 960px;
 padding: 1px;
-  color: #ffffff;
-  font-size: 25px;
-  font-family:CustomFont2;
+color: #ffffff;
+font-size: 25px;
+font-family:CustomFont2;
+margin-top: 20px;
 }
 
 h2 {
@@ -42,12 +61,14 @@ text-align: center;
 }
 
 .riddle {
-  margin-top: 1px;
+padding-bottom: 5px; 
+margin-top: 10px;
 margin-bottom: 20px;
 padding: 20px;
 position: relative;
-  color: #ffffff;
+color: #ffffff;
 }
+
 
 /* Style the hint trigger and content */
 .hint-trigger {
@@ -104,15 +125,18 @@ font-size: 1rem;
   background-color: #e0f121;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
   border: none;
+  z-index: 2;
 }
 .EasyHard{
   font-weight: bold;
   font-family: CustomFont;
   color: white;
-  padding: 10px 20px;
+  padding: 50px;
   text-align: center;
+  z-index: 2;
 }
 .EasyHard2{
+  z-index: 2;
   font-weight: bold;
   font-family: CustomFont;
   background-color: #323232;
