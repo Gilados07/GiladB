@@ -26,6 +26,8 @@ align-items: center;
 }
 
 .timer{
+  margin-top: 1px;
+  margin-left: 4px;
   font-weight: bold;
   font-family: CustomFont;
   background-color: #323232;
@@ -43,6 +45,13 @@ align-items: center;
   justify-content: center;
   align-items: center;
 
+}
+.nextriddle{
+  margin-top: 5px;
+  margin-left: 16px;
+  font-weight: bold;
+  font-family: CustomFont;
+  color: white;
 }
 header {
 color: #e0f121;
@@ -217,7 +226,7 @@ color: white;
     font-size: 1rem;
   }
   .hint-button {
-    width: 60px;
+    width: 200px;
     font-size: 14px;
     padding: 8px 16px;
     justify-content: center;
