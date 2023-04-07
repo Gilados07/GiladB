@@ -30,7 +30,7 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
   border: none;
 
-}
+} 
 header {
 color: #e0f121;
 text-align: center;
@@ -177,6 +177,8 @@ font-size: 1rem;
   /* Styles for screens smaller than 768px */
   header {
     font-size: 1.5rem;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
   }
   .container {
     margin: 0 auto;
