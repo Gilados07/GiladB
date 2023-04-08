@@ -112,7 +112,6 @@ font-size: 1rem;
 .hint-button {
   font-weight: bold;
   font-family: CustomFont;
-  background-color: #323232;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -120,8 +119,7 @@ font-size: 1rem;
   font-size: 16px;
   cursor: pointer;  
   border-radius: 12px;
-  background-color: #e0f121;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  background-color:#807a7a;
   border: none;
   z-index: 2;
   width: 80px; /* Set the width to 120 pixels */
@@ -198,6 +196,7 @@ font-size: 1rem;
 color: white;
 }
 .Submit{
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 10);
   border: 2px solid white;
   font-family: CustomFont;
   text-align: center;
@@ -211,6 +210,7 @@ color: white;
   width: 60px;
   cursor: pointer;
   margin-bottom: 2px;
+  background-color: #e0f121;
 }
 @media only screen and (max-width: 600px) {
   /* Styles for screens with maximum width of 600 pixels */
