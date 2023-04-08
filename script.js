@@ -79,7 +79,7 @@ function updateTimer() {
 // JavaScript for checking and displaying the result
 document.getElementById("submit-btn").addEventListener("click", function() {
 	var userAnswer = document.getElementById("myText").value.toLowerCase();
-	var correctAnswer = "silence"; // Change this to the correct answer
+	var correctAnswer = "tea pot"; // Change this to the correct answer
 	var correctanswerHard = "coffin" // Change this to the correct answer
 	var resultText = document.getElementById("result-text");
 	var myTextInput = document.getElementById("myText"); // Add reference to the input field

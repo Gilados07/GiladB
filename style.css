@@ -120,7 +120,7 @@ font-size: 1rem;
   cursor: pointer;  
   border-radius: 12px;
   background-color:#807a7a;
-  border: none;
+  border:none;
   z-index: 2;
   width: 80px; /* Set the width to 120 pixels */
   height: 40px; /* Set the height to 40 pixels */
@@ -164,7 +164,7 @@ font-size: 1rem;
 /* Custom riddle title font size */
 .riddle-title {
   font-size: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 3px;
 }
 #ad-container {
   display: none;
@@ -209,7 +209,7 @@ color: white;
   color: white;
   width: 60px;
   cursor: pointer;
-  margin-bottom: 2px;
+  margin-bottom: 45px;
   background-color: #e0f121;
 }
 @media only screen and (max-width: 600px) {
