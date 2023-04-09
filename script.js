@@ -1,3 +1,4 @@
+
 // Get the button element
 var hintButton = document.querySelector('.hint-button');
 
