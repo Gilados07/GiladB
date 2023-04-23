@@ -1,6 +1,13 @@
-
+var i=0
+riddle_easy_array = ["riddlea","riddleb","riddlec"]
+hint_easy_array = ["hinta","hintb","hintc"]
+riddle_hard_array = ["harda","hardb","hardc"]
+hint_hard_array = ["hintHa","hintHb","hintHc"]
 // Get the button element
 var hintButton = document.querySelector('.hint-button');
+
+var riddletitle = document.querySelector('.riddle-title');
+var hinttext = document.querySelector('.hint-text');
 
 // Get the hint text element
 var hintText = document.querySelector('.hint-text');
@@ -46,8 +53,17 @@ Hard.addEventListener('click', () => {
 var timer = document.getElementById("timer");
 var interval = setInterval(updateTimer, 1000); // Update the timer every 1 second
 
+function Switch_Riddles_and_hints(){
+  //document.querySelector('.riddle-title').textContent = riddle_easy_array[i]
+  riddletitle.textContent = riddle_easy_array[i]
+  hinttext.textContent = hint_easy_array[i]
+  
+  i+=1
+}
+
 // Function to update the timer
 function updateTimer() {
+  //Switch_Riddles_and_hints()
   var now = new Date(); // Get the current date and time
   var target = new Date(); // Set the target time to the current time
   var targetHour = now.getHours() < 12 ? 12 : 0; // Set the target hour to the nearest 12:00 PM or 12:00 AM based on current hour
@@ -58,9 +74,9 @@ function updateTimer() {
   var timerValue = Math.floor((target.getTime() - now.getTime()) / 1000); // Calculate the remaining time in seconds
 
   if (timerValue <= 0) {
+    
     clearInterval(interval); // Stop the timer when it reaches 0
     timer.textContent = '00:00:00';
-    alert("Timer finished!");
     // Set the target time to the next corresponding time for the next iteration
     targetHour = targetHour === 0 ? 12 : 0;
     target.setDate(target.getDate() + 1); // Move to the next day
@@ -102,5 +118,6 @@ document.getElementById("myText").addEventListener("keydown", function(event) {
 	  event.preventDefault(); // Prevent the default form submission behavior
 	  document.getElementById("submit-btn").click(); // Trigger submit button click event
 	}
+  
 });
 
