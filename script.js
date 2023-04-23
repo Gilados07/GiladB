@@ -39,7 +39,7 @@ Easy.addEventListener('click', () => {
 Hard.addEventListener('click', () => {
   // Change content to "Hard" for hard mode
   document.querySelector('.riddle-title').textContent = '"' + "The person who makes it, sells it. The person who buys it, never uses it. The person who uses it, never knows they're using it. What is it?!" + '"';
-  document.querySelector('.hint-text').textContent = '"' + " item that is typically associated with funerals" + '"';
+  document.querySelector('.hint-text').textContent = " item that is typically associated with funerals";
 });
 
 // Timer build
