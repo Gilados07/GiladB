@@ -12,89 +12,86 @@
   src: url('./fonts/BalooBhaijaan2-Regular.ttf'); /* Path to the font file in your project directory */
 }
 body {
-  background-color: #807a7a;
-  background-size: cover;
-  background-position: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #f0c5b0, #fbe5d5);
   font-family: Roboto, sans-serif;
 }
 
 .all{
-display: flex;
-flex-direction: column;
-gap: 15px;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
-.timer{
-  margin-top: 1px;
-  margin-left: 4px;
+.timer-and-riddle {
+  display: flex;
+  align-items: center; /* center align the children vertically */
+}
+
+.timer {
   font-weight: bold;
   font-family: CustomFont;
-  background-color: #323232;
-  color: white;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  font-size: 25px;
-  width: 120px; /* Set the width to 120 pixels */
-  height: 30px; /* Set the height to 40 pixels */
-  border-radius: 12px;
-  background-color: #FFC200;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 10);
-  border: none;
-  justify-content: center;
-  align-items: center;
-
+  color: #ffffff;
+  font-size: large;
 }
-.nextriddle{
+
+.nextriddle {
   margin-left: 17px;
+  margin-right: 7px;
   font-weight: bold;
   font-family: CustomFont;
-  color: white;
-} 
-header {
-color: #FFC200;
-text-align: center;
-
-font-size: 2rem;
-font-weight: bold;
-text-shadow: 1px 1px #000000;
-font-family: CustomFont;
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
+
+header {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px #000000;
+  font-family: CustomFont;
+}
+
 /* Style the container and riddle */
 .container {
-max-width: 960px;
-color: #ffffff;
-font-size: 25px;
-font-family:CustomFont2;
+  max-width: 960px;
+  color: #000000;
+  font-size: 25px;
+  font-family: CustomFont2;
 }
+
 h2 {
-font-size: 2rem;
-font-weight: bold;
-text-transform: uppercase;
-text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* Style the hint trigger and content */
 .hint-trigger {
-font-style: italic;
-font-size: 1.2rem;
-cursor: pointer;
+  font-style: italic;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .hint-content {
-display: none;
-font-style: italic;
-font-size: 1.2rem;
+  display: none;
+  font-style: italic;
+  font-size: 1.2rem;
 }
 
 /* Style the footer */
 footer {
-color: #fff;
-text-align: center;
-align-items: flex-end;
-font-size: 1rem;
+  color: #000000;
+  text-align: center;
+  align-items: flex-end;
+  font-size: 1rem;
 }
+
 /* Center the riddle and the hint container */
 .riddle {
   text-align: center;
@@ -112,14 +109,14 @@ font-size: 1rem;
 .hint-button {
   font-weight: bold;
   font-family: CustomFont;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;  
   border-radius: 12px;
-  background-color:#807a7a;
+  background-color:#ffffff00;
   border:none;
   z-index: 2;
   width: 80px; /* Set the width to 120 pixels */
@@ -130,7 +127,7 @@ font-size: 1rem;
 .EasyHard{
   font-weight: bold;
   font-family: CustomFont;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   z-index: 2;
   margin-bottom: 60px;
@@ -143,15 +140,14 @@ font-size: 1rem;
   z-index: 2;
   font-weight: bold;
   font-family: CustomFont;
-  background-color: #323232;
-  color: white;
+  color:rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
   font-size: 22px;
   cursor: pointer;
   border-radius: 12px;
-  background-color: #FFC200;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+  background-color: rgba(228, 9, 9, 0.5);
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);*/
   border: none;
   justify-content: center;
   align-items: center;
@@ -170,17 +166,16 @@ font-size: 1rem;
   display: none;
   width: 100%;
   height: 250px;
-  
   border-radius: 10px;
   position: absolute;
   top: 50%;
    left: 0;
    transform: translateY(-50%);
-   color: #ffffff;
+   color: #000000;
 }
 .InsertText{
   outline: none;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   font-family: CustomFont;
   text-align: center;
   display: flex;
@@ -188,16 +183,17 @@ font-size: 1rem;
   border-radius: 12px;
   justify-content: center;
   align-items: center;
-  background-color: #807a7a;
-  color: white;
+  background-color: #ffffff00;
+  color: rgb(0, 0, 0);
   margin-bottom: 5px;
 }
 .InsertText::placeholder{
-color: white;
+color: rgb(0, 0, 0);
 }
 .Submit{
-  text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 10);
-  border: 2px solid white;
+  /*text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 10);*/
+  border: 2px solid rgb(0, 0, 0);
+  border: none;
   font-family: CustomFont;
   text-align: center;
   display: flex;
@@ -206,11 +202,11 @@ color: white;
   justify-content: center;
   align-items: center;
   background-color: #807a7a;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 60px;
   cursor: pointer;
   margin-bottom: 45px;
-  background-color: #FFC200 ;
+  background-color: #ffc40000 ;
 }
 @media only screen and (max-width: 600px) {
   /* Styles for screens with maximum width of 600 pixels */
@@ -235,7 +231,7 @@ color: white;
     margin-left: 12px;
     font-weight: bold;
     font-family: CustomFont;
-    color: white;
+    color: rgb(0, 0, 0);
   } 
 
 }
