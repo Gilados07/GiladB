@@ -12,7 +12,6 @@
   src: url('./fonts/BalooBhaijaan2-Regular.ttf'); /* Path to the font file in your project directory */
 }
 body {
-  
   background: linear-gradient(to bottom, #f0c5b0, #fbe5d5);
   background-size:cover;
   background-repeat: no-repeat;
@@ -210,6 +209,53 @@ color: rgb(0, 0, 0);
   cursor: pointer;
   margin-bottom: 45px;
   background-color: #ffc40000 ;
+}
+
+.Site-description{
+  color: #000000;
+  font-family: CustomFont2;
+  text-align: center;
+  display: flex;
+  font-size: 25px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  line-height: 45px;
+}
+.everyone_word{
+  color:aquamarine;
+  font-family: CustomFont;
+  font-size: 35px;
+  text-shadow: 1px 1px #000000;
+}
+
+.Buttons_mainpage{
+  border: 2px solid rgb(0, 0, 0);
+  font-family: CustomFont;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffc40000 ;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 50px;
+  width: 280px;
+  height: 72px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Buttons_mainpage:hover{
+  background-color:aquamarine; /* Dark green */
+}
+.Buttons_align{
+  display: flex;
+  align-items: center; /* center align the children vertically */
 }
 @media only screen and (max-width: 600px) {
   /* Styles for screens with maximum width of 600 pixels */
