@@ -290,35 +290,37 @@ color: rgb(0, 0, 0);
 .Home_Button:hover{
   color:aquamarine; /* Dark green */
 }
-
-  @media screen and (min-width: 600px) {
-    header {
-      font-size: 3rem;
-    }
-    
-    body{
-      height: 100vh;
-      width: 100vh;
-
-    }
-    .container {
-      font-size: 30px;
-    }
+@media screen and (min-width: 768px) {
+  /* Style the body and header */
+  body {
+    background: linear-gradient(to right, #f0c5b0, #fbe5d5);
+  }
   
-    h2 {
-      font-size: 3rem;
-    }
+  header {
+    font-size: 3rem;
+  }
   
-    .hint-trigger {
-      font-size: 1.5rem;
-    }
+  /* Style the container and riddle */
+  .container {
+    font-size: 30px;
+  }
   
-    .hint-content {
-      font-size: 1.5rem;
-    }
+  h2 {
+    font-size: 3rem;
+  }
   
-    footer {
-      font-size: 1.2rem;
-    }
+  /* Style the hint trigger and content */
+  .hint-trigger {
+    font-size: 1.5rem;
+  }
+  
+  .hint-content {
+    font-size: 1.5rem;
+  }
+  
+  /* Style the footer */
+  footer {
+    font-size: 1.2rem;
+  }
 
 }
