@@ -291,11 +291,11 @@ color: rgb(0, 0, 0);
   color:aquamarine; /* Dark green */
 }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
     header {
       font-size: 3rem;
     }
-  
+    
     .container {
       font-size: 30px;
     }
