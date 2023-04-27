@@ -296,6 +296,10 @@ color: rgb(0, 0, 0);
       font-size: 3rem;
     }
     
+    body{
+      height:auto;
+
+    }
     .container {
       font-size: 30px;
     }
