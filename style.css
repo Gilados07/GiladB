@@ -91,11 +91,11 @@ h2 {
 }
 
 /* Style the footer */
-footer {
+.Footers {
   color: #000000;
   text-align: center;
   align-items: flex-end;
-  font-size: 1rem;
+  font-size: small;
 }
 
 /* Center the riddle and the hint container */
@@ -159,7 +159,7 @@ footer {
   align-items: center;
 }
 .EasyHard2:hover{
-  color:aquamarine; /* Dark green */
+  text-shadow: 1px 1px black;
 }
 /* Style the hint text */
 .hint-text {
