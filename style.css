@@ -171,17 +171,6 @@ h2 {
   font-size: 25px;
   margin-bottom: 3px;
 }
-#ad-container {
-  display: none;
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-   left: 0;
-   transform: translateY(-50%);
-   color: #000000;
-}
 .InsertText{
   outline: none;
   border: 2px solid rgb(0, 0, 0);
@@ -290,37 +279,43 @@ color: rgb(0, 0, 0);
 .Home_Button:hover{
   color:aquamarine; /* Dark green */
 }
-@media screen and (min-width: 768px) {
-  /* Style the body and header */
+@media only screen and (max-width: 600px) {
   body {
-    background: linear-gradient(to right, #f0c5b0, #fbe5d5);
-  }
+    height:100vh;
+    width:100vw;
+    } 
   
-  header {
-    font-size: 3rem;
-  }
-  
-  /* Style the container and riddle */
-  .container {
-    font-size: 30px;
-  }
-  
-  h2 {
-    font-size: 3rem;
-  }
-  
-  /* Style the hint trigger and content */
-  .hint-trigger {
-    font-size: 1.5rem;
-  }
-  
-  .hint-content {
-    font-size: 1.5rem;
-  }
-  
-  /* Style the footer */
-  footer {
-    font-size: 1.2rem;
-  }
+    .Buttons_mainpage{
+      border: 2px solid rgb(0, 0, 0);
+      font-family: CustomFont;
+      text-align: center;
+      display:flex;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      background-color: #ffc40000 ;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 4px;
+    }
+    .Buttons_align
+    {
+      flex-direction:column;
 
-}
+    }
+    h1{
+      margin-top: 35px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      font-size: 50px;
+    }
+    
+
+    
+    
+    
+
+
+  }
