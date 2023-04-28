@@ -299,11 +299,11 @@ color: rgb(0, 0, 0);
       cursor: pointer;
       background-color: #ffc40000 ;
       transition: all 0.3s ease-in-out;
-      margin-bottom: 2px;
     }
     .Buttons_align
     {
       flex-direction:column;
+      margin: 1px;
 
     }
     h1{
