@@ -315,7 +315,7 @@ color: rgb(0, 0, 0);
       display: flex;
       gap: 5px;
       align-items: center;
-      font-size: 50px;
+      font-size: 45px;
     }
     .hint-button {
       width: 130px;
