@@ -60,6 +60,7 @@ header {
   font-weight: bold;
   text-shadow: 1px 1px #000000;
   font-family: CustomFont;
+  margin-top: 40px;
 }
 
 /* Style the container and riddle */
