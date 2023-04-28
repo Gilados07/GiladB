@@ -282,8 +282,7 @@ color: rgb(0, 0, 0);
 @media only screen and (max-width: 600px) {
   body {
     background: linear-gradient(to bottom, #f0c5b0, #fbe5d5);
-   background-size:cover;
-   background-repeat:round;
+   background-size:contain;
    height:100vh;
     width:100vw;
     } 
