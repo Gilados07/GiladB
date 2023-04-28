@@ -303,7 +303,7 @@ color: rgb(0, 0, 0);
     .Buttons_align
     {
       flex-direction:column;
-      margin: 1px;
+      margin: 0;
 
     }
     h1{
