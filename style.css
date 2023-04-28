@@ -313,11 +313,12 @@ color: rgb(0, 0, 0);
       align-items: center;
       font-size: 45px;
     }
-    
-
-    
-    
-    
-
+    .hint-button {
+      width: 130px;
+    }
+    .Home_Button{
+      margin: 0;
+      padding-left: 0;
+    }
 
   }
