@@ -295,6 +295,7 @@ color: rgb(0, 0, 0);
   width: 280px;
   height: 72px;
   transition: all 0.3s ease-in-out;
+  margin-top:0;
 }
 
 .Buttons_mainpage:hover{
