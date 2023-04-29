@@ -122,10 +122,10 @@ h2 {
 
 /* Style the footer */
 .Footers {
-  color: #000000;
-  text-align: center;
-  align-items: flex-end;
+  position: fixed;
+  color: #2e2525;
   font-size: small;
+  bottom: 0;
 }
 
 /* Center the riddle and the hint container */
