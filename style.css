@@ -52,6 +52,35 @@ body {
   text-align: center;
   color: rgb(0, 0, 0);
 }
+.nav {
+  background-color:  rgba(228, 9, 9, 0.272);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.li {
+  margin: 0 10px;
+}
+
+.a {
+  font-family: CustomFont;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.a:hover{
+  color: aquamarine;
+}
+
 
 header {
   color: #ffffff;
@@ -160,7 +189,25 @@ h2 {
   align-items: center;
 }
 .EasyHard2:hover{
-  text-shadow: 1px 1px black;
+  text-shadow: 0px 0px 7  px black;
+}
+.Extrahard{
+  width: 200px; /* Set the width to 120 pixels */
+  height: 35px; /* Set the height to 40 pixels */
+  z-index: 2;
+  font-weight: bold;
+  font-family: CustomFont;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: rgba(228, 9, 9, 0.5);
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);*/
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 /* Style the hint text */
 .hint-text {
