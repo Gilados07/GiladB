@@ -19,6 +19,23 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
+.form{
+  font-weight: bold;
+  font-family: CustomFont;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display:flex;
+  font-size: 16px; 
+  border-radius: 12px;
+  background-color:#ffffff00;
+  border:none;
+  text-align: center;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
 .all{
   display: flex;
   flex-direction: column;
@@ -175,8 +192,8 @@ h2 {
 }
 .EasyHard2{
   width: 120px; /* Set the width to 120 pixels */
-  height: 35px; /* Set the height to 40 pixels */
   z-index: 2;
+  height: 35px; /* Set the height to 40 pixels */
   font-weight: bold;
   font-family: CustomFont;
   color:rgb(255, 255, 255);
@@ -274,17 +291,38 @@ color: rgb(0, 0, 0);
   
   background-color:aquamarine;
 }
+.Submit2{
+  /*text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 10);*/
+  border: 2px solid rgb(0, 0, 0);
+  font-family: CustomFont;
+  text-align: center;
+  display: flex;
+  font-size: 13px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  background-color: #807a7a;
+  color: rgb(0, 0, 0);
+  width: 60px;
+  cursor: pointer;
+  margin-bottom: 45px;
+  background-color: #ffc40000 ;
+}
+.Submit2:hover{
+  
+  background-color:aquamarine;
+}
 .Site-description{
   color: #000000;
   font-family: CustomFont2;
   text-align: center;
   display: flex;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 8px;
   justify-content: center;
   align-items: center;
   display: inline-block;
-  line-height: 45px;
+  line-height: 30px;
 }
 .everyone_word{
   color:aquamarine;
