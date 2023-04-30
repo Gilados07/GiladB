@@ -16,9 +16,9 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   font-family: Roboto, sans-serif;
-  height:100vh;
+  background-size: cover;
+  min-height: 100vh;
 }
-
 .all{
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body {
   text-align: center;
   text-decoration: none;
   color:  rgba(228, 9, 9, 0.5);;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 .nextriddle {
@@ -51,6 +51,7 @@ body {
   font-family: CustomFont;
   text-align: center;
   color: rgb(0, 0, 0);
+  font-size: 1.5rem;
 }
 .nav {
   background-color:  rgba(228, 9, 9, 0.272);
