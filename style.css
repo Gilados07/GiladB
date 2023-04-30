@@ -214,6 +214,14 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.EasyHard2:hover{
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  width: 125px; /* Set the width to 120 pixels */
+  height: 40px; /* Set the height to 40 pixels */
+}
 /* Style the hint text */
 .hint-text {
   font-size: 14px;
