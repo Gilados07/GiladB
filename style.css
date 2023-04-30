@@ -35,7 +35,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction:column;
+  gap: 20px;
+  padding-top: 20px;
 }
+
 .all{
   display: flex;
   flex-direction: column;
@@ -305,7 +308,6 @@ color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   width: 60px;
   cursor: pointer;
-  margin-bottom: 45px;
   background-color: #ffc40000 ;
 }
 .Submit2:hover{
@@ -323,6 +325,19 @@ color: rgb(0, 0, 0);
   align-items: center;
   display: inline-block;
   line-height: 30px;
+}
+.ContactUs-description
+{
+  color: #000000;
+  font-family: CustomFont2;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .everyone_word{
   color:aquamarine;
