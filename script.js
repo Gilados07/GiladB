@@ -92,7 +92,6 @@ function updateTimer() {
   timer.textContent = ('0' + hours).slice(-2) + ':' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2);
 }
 
-
 // JavaScript for checking and displaying the result
 document.getElementById("submit-btn").addEventListener("click", function() {
 	var userAnswer = document.getElementById("myText").value.toLowerCase();
@@ -103,10 +102,22 @@ document.getElementById("submit-btn").addEventListener("click", function() {
   
 	if (userAnswer === correctAnswer ||userAnswer ===correctanswerHard ) {
 	  myTextInput.style.borderColor = "lightgreen"; // Set border color to green
+    myTextInput.style.borderWidth="5px";
 	} else {
 	  myTextInput.style.borderColor = "red"; // Set border color to red
+    myTextInput.style.borderWidth="5px";
 	}
+  myTextInput.addEventListener("input", function() {
+    myTextInput.style.borderColor = "black"; // Reset border color to black
+    myTextInput.style.borderWidth = "2px"; // Reset border width to default
+  });
 });
+    
+const submitBtn = document.querySelector(".Submit2");
+submitBtn.addEventListener("click", function() {
+  alert("Thanks!");
+});
+
 
 document.getElementById("myText").addEventListener("input", function() {
 	var resultText = document.getElementById("result-text");
