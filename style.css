@@ -358,9 +358,11 @@ color: rgb(0, 0, 0);
   
   background-color:aquamarine;
 }
+.textt{
+  font-family: "Arial";
+}
 .Site-description{
   color: #000000;
-  font-family: CustomFont2;
   text-align: center;
   display: flex;
   font-size: 23px;
@@ -369,11 +371,10 @@ color: rgb(0, 0, 0);
   align-items: center;
   display: inline-block;
   line-height: 50px;
+  
 }
 .strong{
-color:#000000;
-font-size: 27px;
-
+color: rgb(0, 0, 0)
 }
 .ContactUs-description
 {
