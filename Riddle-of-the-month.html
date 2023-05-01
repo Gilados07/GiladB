@@ -36,16 +36,36 @@
 					<button class="hint-button" id="hintButton">Hint</button>
 					<p class="hint-text">I own a triangle</p>
 					<input class="InsertText" type="text" id="myTextXH" name="myTextXH" placeholder="What's your answer?">
-					<button class="Submit" id="submit-btn">Submit</button>
-					<p id="result-text"></p>
+					<button class="Submit3" id="submit-btn3">Submit</button>
+					<p id="result-text3"></p>
+					<script>
+						// JavaScript for checking and displaying the result
+					document.getElementById("submit-btn3").addEventListener("click", function() {
+					var userAnswer = document.getElementById("myTextXH").value.toLowerCase();
+					var correctAnswerXH = "fire"; // Change this to the correct answer
+					var resultText = document.getElementById("result-text3");
+					var myTextInput = document.getElementById("myTextXH"); // Add reference to the input field
+  
+					if (userAnswer === correctAnswerXH) {
+	  					myTextInput.style.borderColor = "lightgreen"
+						myTextInput.style.borderWidth="5px"; // Set border color to green
+					} else {
+	  					myTextInput.style.borderColor = "red"; // Set border color to red
+						  myTextInput.style.borderWidth="5px";
+					}
+					myTextInput.addEventListener("input", function() {
+							myTextInput.style.borderColor = "black"; // Reset border color to black
+							myTextInput.style.borderWidth = "2px"; // Reset border width to default
+						});
+});
+					</script>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 	<!-- Link to external JavaScript file -->
-	<script src="script.js"></script>
+	
 	</div>
+    <script src="script.js"></script>
 </body>
 </html>
