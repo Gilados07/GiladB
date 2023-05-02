@@ -523,4 +523,16 @@ color: rgb(0, 0, 0)
      text-align: center;
      padding-right: 2px;
     }
+    .all{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: -20px;
+    }
+    .riddle-title {
+      font-size: 25px;
+      margin-bottom: 3px;
+      margin-top: 50px;
+    }
   }
