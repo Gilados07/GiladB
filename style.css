@@ -65,7 +65,6 @@ body {
 .timer-and-riddle {
   display: flex;
   align-items: center; /* center align the children vertically */
-  position: absolute;
   bottom: 0;
   right: 0;
   margin-right: 10px;
@@ -514,10 +513,8 @@ color: rgb(0, 0, 0)
 
       background-color: #fbe5d5;
     }
-    .ul{
-     
+    
 
-    }
     .li {
      font-size: 17px;
      text-align: center;
