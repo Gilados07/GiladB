@@ -528,7 +528,7 @@ color: rgb(0, 0, 0)
         flex-direction: column;
         gap: 15px;
         align-items: center;
-        margin-top: -20px;
+        margin-top: -40px;
     }
     .riddle-title {
       font-size: 25px;
