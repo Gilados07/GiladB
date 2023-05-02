@@ -12,6 +12,23 @@
 </head>
 
 <body>
+	<div class="piccontainer" id="piccontainer">
+		<!--img src="charb.png" width="50" height="100" class="picimage" id="picimage">
+		<script>
+		  var container = document.getElementById("piccontainer");
+		  var image = document.getElementById("picimage");
+	  
+		  function moveImage() {
+			var x = Math.floor(Math.random() * (window.innerWidth - image.offsetWidth));
+			var y = Math.floor(Math.random() * (window.innerHeight - image.offsetHeight));
+			image.style.top = y + "px";
+			image.style.left = x + "px";
+		  }
+	  
+		  container.addEventListener("click", moveImage);
+		  moveImage(); // move the image to a random location on page load
+	</script-->
+	
 	<nav class="nav">
 		<ul class="ul" >
 		  <li class="li"><a class="a" href="/">Home</a></li>
@@ -52,6 +69,8 @@
 					} else {
 	  					myTextInput.style.borderColor = "red"; // Set border color to red
 						  myTextInput.style.borderWidth="5px";
+						  var audio = new Audio("hellno.mp4"); // Change this to the URL of the music video you want to play
+					audio.play();
 					}
 					myTextInput.addEventListener("input", function() {
 							myTextInput.style.borderColor = "black"; // Reset border color to black
@@ -61,6 +80,7 @@
 					</script>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 	<!-- Link to external JavaScript file -->
