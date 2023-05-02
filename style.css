@@ -524,6 +524,7 @@ color: rgb(0, 0, 0)
      font-size: 17px;
      text-align: center;
      padding-right: 2px;
+     color: orange;
     }
     .all{
         display: flex;
