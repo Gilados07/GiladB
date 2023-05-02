@@ -4,15 +4,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav class="nav">
-		<ul class="ul" >
+    <div class="navigate">
+        <nav class="nav">
+          <ul class="ul" >
             <li class="li"><a class="a" href="/">Home</a></li>
             <li class="li"><a class="a" href="RiddleDay.html">Daily riddle</a></li>
             <li class="li"><a class="a" href="Riddle-of-the-month.html">Monthly riddle</a></li>
             <li class="li"> <a class="a" href="about-us.html">About Us</a></li>
             <li class="li"><a class="a" href="contact-us.html">Contact Us</a></li>
-		</ul>
-	  </nav>
+          </ul>
+        </nav>
+      </div>
+      <script>
+        const navigateBtn = document.querySelector('.navigate-btn');
+        const nav = document.querySelector('.nav');
+        navigateBtn.addEventListener('click', function() {
+        nav.classList.toggle('show-nav');
+});
+      </script>
     <div class="all">
         <header>
             <h1>About riddleday.com</h1>
