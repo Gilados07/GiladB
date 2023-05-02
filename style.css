@@ -535,4 +535,22 @@ color: rgb(0, 0, 0)
       margin-bottom: 3px;
       margin-top: 50px;
     }
+    .timer {
+      font-weight: bold;
+      font-family: CustomFont;
+      text-align: center;
+      text-decoration: none;
+      color:  rgba(228, 9, 9, 0.5);;
+      font-size: 1rem;
+    }
+    
+    .nextriddle {
+      margin-left: 17px;
+      margin-right: 7px;
+      font-weight: bold;
+      font-family: CustomFont;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 1rem;
+    }
   }
