@@ -62,28 +62,25 @@ body {
 
 }
 
-.BothTimeAndText{
-
+.BothTimeAndText {
   position: relative;
 }
 
 .timer-and-riddle {
-  display: flex;
-  align-items: center; /* center align the children vertically */
-  position:absolute;
+  position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  align-items: center;
   margin-right: 10px;
 }
-
-
 
 .timer {
   font-weight: bold;
   font-family: CustomFont;
   text-align: center;
   text-decoration: none;
-  color:  rgba(228, 9, 9, 0.5);;
+  color: rgba(228, 9, 9, 0.5);
   font-size: 1.5rem;
 }
 
