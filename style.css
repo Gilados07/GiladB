@@ -62,14 +62,21 @@ body {
 
 }
 
+.BothTimeAndText{
+
+  position: relative;
+}
+
 .timer-and-riddle {
   display: flex;
   align-items: center; /* center align the children vertically */
-  position:fixed;
+  position:absolute;
   bottom: 0;
   right: 0;
   margin-right: 10px;
 }
+
+
 
 .timer {
   font-weight: bold;
