@@ -65,6 +65,7 @@ body {
 .timer-and-riddle {
   display: flex;
   align-items: center; /* center align the children vertically */
+  position:fixed;
   bottom: 0;
   right: 0;
   margin-right: 10px;
