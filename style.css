@@ -466,7 +466,7 @@ color: rgb(0, 0, 0)
     background: linear-gradient(to bottom, #f0c5b0, #fbe5d5);
    background-size:contain;
    background-repeat:no-repeat;
-   height:100vh;
+   min-height:100vh;
     } 
   
     .Buttons_mainpage{
@@ -524,7 +524,6 @@ color: rgb(0, 0, 0)
      font-size: 17px;
      text-align: center;
      padding-right: 2px;
-     color: orange;
     }
     .all{
         display: flex;
