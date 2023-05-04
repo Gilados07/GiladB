@@ -490,7 +490,7 @@ color: rgb(0, 0, 0)
     }
     .Site-description{
     
-      font-size: 20px;
+      font-size: 24px;
     }
     .everyone_word{
     font-size: 30px;
@@ -524,7 +524,7 @@ color: rgb(0, 0, 0)
       font-family: CustomFont;
       text-align: center;
       text-decoration: none;
-      color:  rgba(228, 9, 9, 0.5);;
+      color:#8B0000;
       font-size: 1rem;
     }
     
