@@ -413,7 +413,7 @@ color: rgb(0, 0, 0)
   width: 280px;
   height: 72px;
   transition: all 0.3s ease-in-out;
-  margin: 30px;;
+  margin: 30px;
 }
 
 .Buttons_mainpage:hover{
@@ -456,20 +456,6 @@ color: rgb(0, 0, 0)
 
     .a{
       color:#ffffff;
-    }
-    .Buttons_mainpage{
-      border: 2px solid rgb(0, 0, 0);
-      font-family: CustomFont;
-      text-align: center;
-      display:flex;
-      font-size: 20px;
-      justify-content: center;
-      align-items: center;
-      color: rgb(0, 0, 0);
-      cursor: pointer;
-      background-color: #ffc40000 ;
-      transition: all 0.3s ease-in-out;
-      margin: 0;
     }
     .Buttons_align
     {
