@@ -110,8 +110,8 @@ body {
 }
 .a:hover{
   color: aquamarine;
-  color: #000000;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 22px;
 }
 
 
@@ -311,12 +311,14 @@ color: rgb(0, 0, 0);
   cursor: pointer;
   margin-bottom: 45px;
   background-color: #ffc40000 ;
+  transition: all 0.3s ease-in-out;
 }
 .Submit:hover{
   
   background-color:rgb(255, 255, 255);
 }
 .Submit2{
+  transition: all 0.3s ease-in-out;
   /*text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 10);*/
   border: 2px solid rgb(51, 50, 50);
   font-family: CustomFont;
@@ -334,7 +336,7 @@ color: rgb(0, 0, 0);
 }
 .Submit2:hover{
   
-  background-color:aquamarine;
+  background-color:rgb(255, 255, 255);
 }
 .MessageForm{
   display: inline-block;
@@ -356,6 +358,7 @@ color: rgb(0, 0, 0);
   width: 60px;
   cursor: pointer;
   background-color: #ffffff00 ;
+  transition: all 0.3s ease-in-out;
 }
 .Submit3:hover{
   background-color:rgb(255, 255, 255);
@@ -364,7 +367,7 @@ color: rgb(0, 0, 0);
   color: #000000;
   text-align: center;
   display: flex;
-  font-size: 19px;
+  font-size: 22px;
   line-height: 44px;
   border-radius: 8px;
   justify-content: center;
@@ -391,17 +394,15 @@ color: rgb(0, 0, 0)
   margin-top: 30px;
 }
 .everyone_word{
-  color:aquamarine;
+  color:#8B0000;
   font-family: CustomFont;
   font-size: 35px;
-  text-shadow: 1px 1px #000000;
 }
 
 .Buttons_mainpage{
   border: 2px solid rgb(0, 0, 0);
   font-family: CustomFont;
   text-align: center;
-  display: flex;
   font-size: 20px;
   border-radius: 8px;
   justify-content: center;
@@ -409,20 +410,16 @@ color: rgb(0, 0, 0)
   color: rgb(0, 0, 0);
   cursor: pointer;
   background-color: #ffc40000 ;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin: 50px;
   width: 280px;
   height: 72px;
   transition: all 0.3s ease-in-out;
-  margin-top:0;
+  margin: 30px;;
 }
 
 .Buttons_mainpage:hover{
-  background-color:aquamarine; /* Dark green */
+  background-color:#ffffff; /* Dark green */
 }
 .Buttons_align{
-  display: flex;
   align-items: center; /* center align the children vertically */
 }
 .Home_Button{
@@ -450,7 +447,7 @@ color: rgb(0, 0, 0)
 }
 @media only screen and (max-width: 600px) {
   body {
-    background: linear-gradient(to bottom, #f0c5b0, #fbe5d5);
+    background-color: #9c9c9c;
     background-size:contain;
     background-repeat:no-repeat;
     min-height:100vh;
@@ -458,7 +455,7 @@ color: rgb(0, 0, 0)
     } 
 
     .a{
-      color:#000000;
+      color:#ffffff;
     }
     .Buttons_mainpage{
       border: 2px solid rgb(0, 0, 0);
