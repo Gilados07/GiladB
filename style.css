@@ -154,10 +154,10 @@ h2 {
 
 /* Style the footer */
 .Footers {
-  position: fixed;
   color: #000000;
   font-size: small;
   bottom: 0;
+  text-align: center;
 }
 
 /* Center the riddle and the hint container */
@@ -498,7 +498,7 @@ color: rgb(0, 0, 0)
 
     .Footers{
 
-      background-color: #000000;
+      background-color: #00000000;
     }
     
 
@@ -545,7 +545,7 @@ color: rgb(0, 0, 0)
       color: #000000;
       text-align: center;
       display: flex;
-      font-size: 16px;
+      font-size: 22px;
       line-height: 35px;
       border-radius: 8px;
       justify-content: center;
