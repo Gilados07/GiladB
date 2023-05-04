@@ -18,16 +18,18 @@ body {
   font-family: Roboto, sans-serif;
   background-size: cover;
   min-height: 100vh;
+
 }
+
 .ContactUsHead{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 500px;
+  text-align: center;
+}
+.MiddleForm{
+  text-align: center;
+  margin: auto;
+  width: 50%;
 }
 .form{
-  margin-top: -50px;
-  margin-left: 500px;
   font-weight: bold;
   font-family: CustomFont;
   color: rgb(0, 0, 0);
@@ -36,11 +38,10 @@ body {
   border-radius: 12px;
   background-color:#ffffff00;
   border:none;
-  text-align: left;
-  margin-bottom: 60px;
   padding-top: 20px;
   line-height: 2.2;
 }
+
 
 .all{
   display: flex;
@@ -49,17 +50,6 @@ body {
   align-items: center;
   padding-top: 0;
   margin-top: 0;
-}
-
-.ContactUsHead{
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  justify-content: left;
-  padding-top: 0;
-  margin-top: -20px;
-  padding-bottom: 20px;
-
 }
 
 .BothTimeAndText {
@@ -114,9 +104,10 @@ body {
 
 .a {
   font-family: CustomFont;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  font-size: 17px;
 }
 .a:hover{
   color: aquamarine;
@@ -326,10 +317,9 @@ color: rgb(0, 0, 0);
 }
 .Submit2{
   /*text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 10);*/
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(51, 50, 50);
   font-family: CustomFont;
   text-align: center;
-  display: flex;
   font-size: 13px;
   border-radius: 8px;
   justify-content: center;
@@ -339,9 +329,7 @@ color: rgb(0, 0, 0);
   width: 90px;
   cursor: pointer;
   background-color: #ffc40000 ;
-  margin-left: 80px;
-  margin-bottom: 0;
-  border: 2px solid rgb(0, 0, 0);
+
 }
 .Submit2:hover{
   
@@ -464,11 +452,14 @@ color: rgb(0, 0, 0)
 @media only screen and (max-width: 600px) {
   body {
     background: linear-gradient(to bottom, #f0c5b0, #fbe5d5);
-   background-size:contain;
-   background-repeat:no-repeat;
-   min-height:100vh;
+    background-size:contain;
+    background-repeat:no-repeat;
+    min-height:100vh;
     } 
-  
+
+    .a{
+      color:#ffffff;
+    }
     .Buttons_mainpage{
       border: 2px solid rgb(0, 0, 0);
       font-family: CustomFont;
@@ -492,13 +483,7 @@ color: rgb(0, 0, 0)
       gap: 50px;
       margin: 0;
     }
-    h1{
-      margin-top: 35px;
-      display: flex;
-      gap: 5px;
-      align-items: center;
-      font-size: 45px;
-    }
+    
     .hint-button {
       width: 130px;
     }
@@ -521,10 +506,10 @@ color: rgb(0, 0, 0)
     
 
     .li {
-     font-size: 17px;
-     text-align: center;
-     padding-right: 2px;
-    }
+      font-size: 17px;
+      text-align: center ;
+      padding-right: 2px ;
+  }
     .all{
         display: flex;
         flex-direction: column;
@@ -555,4 +540,6 @@ color: rgb(0, 0, 0)
       color: rgb(0, 0, 0);
       font-size: 1rem;
     }
+
+    
   }
