@@ -12,8 +12,9 @@
   src: url('./fonts/BalooBhaijaan2-Regular.ttf'); /* Path to the font file in your project directory */
 }
 body {
-  background-color:#efdabe;
   background-color: #9c9c9c;
+  background-color: #cdcccc;
+  background-size: cover;
   background-size:cover;
   background-repeat: no-repeat;
   font-family: Roboto, sans-serif;
@@ -447,7 +448,6 @@ color: rgb(0, 0, 0)
 }
 @media only screen and (max-width: 600px) {
   body {
-    background-color: #9c9c9c;
     background-size:contain;
     background-repeat:no-repeat;
     min-height:100vh;
