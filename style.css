@@ -23,7 +23,10 @@ body {
   text-align: center;
 
 }
+.leftadd{
+left: 0;
 
+}
 .ContactUsHead{
   text-align: center;
   color: #ffffff;
