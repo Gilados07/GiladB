@@ -24,7 +24,7 @@ body {
 
 }
 .leftadd{
-left: 0;
+  float:left;
 
 }
 .ContactUsHead{
