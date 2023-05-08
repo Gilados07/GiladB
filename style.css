@@ -23,6 +23,9 @@ body {
   text-align: center;
 
 }
+.containeraddleft{
+  overflow: hidden;
+}
 .leftadd{
   float:left;
 }
