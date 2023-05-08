@@ -27,6 +27,7 @@ body {
   overflow: hidden;
 }
 .leftadd{
+  overflow: hidden;
   float:left;
 }
 .ContactUsHead{
