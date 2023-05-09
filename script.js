@@ -101,7 +101,7 @@ document.getElementById("submit-btn").addEventListener("click", function() {
 	var myTextInput = document.getElementById("myText"); // Add reference to the input field
   
 	if (userAnswer === correctAnswer ||userAnswer ===correctanswerHard ) {
-	  myTextInput.style.borderColor = "lightgreen"; // Set border color to green
+	  myTextInput.style.borderColor = "#00FF00"; // Set border color to green
     myTextInput.style.borderWidth="5px";
 	} else {
 	  myTextInput.style.borderColor = "red"; // Set border color to red
