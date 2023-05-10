@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="/">Home</a></li>
+                <li class="li"><a class="a" href="RiddleDay.html">Daily riddle</a></li>
+                <li class="li"><a class="a" href="Riddle-of-the-month.html">Monthly riddle</a></li>
+                <li class="li"> <a class="a" href="about-us.html">About Us</a></li>
+                <li class="li"><a class="a" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1 class="collapse-trigger">The Psychology of Riddles:<br/><span class="alittle"> Why Humans Enjoy Solving Puzzles </span><span class="arrow-icon">&#9660;</span></h1>
+            <div class="collapse-content">
+                <p>Riddles have been around for thousands of years and continue to be a popular pastime for many people.
+                    But why do humans enjoy solving puzzles? The answer lies in the psychology of riddles.</p>
+                <P>For starters, solving a riddle can give a person a sense of satisfaction and accomplishment. Our
+                    brains are wired to seek out patterns and solve problems, so when we solve a difficult riddle, it
+                    can give us a sense of achievement and a release of dopamine, the feel-good chemical in our brains.
+                </P>
+                <P>Furthermore, riddles can be a form of social bonding. People enjoy solving riddles with friends and
+                    family, which can create a sense of camaraderie and teamwork. When we solve a riddle together, it
+                    can also create a sense of shared accomplishment and positive emotions.</P>
+                <p>In conclusion, the psychology of riddles is rooted in our natural desire to solve problems and seek
+                    out patterns. Solving riddles can give us a sense of satisfaction, exercise our brain, and create
+                    social bonding experiences. So the next time you come across a challenging riddle, embrace the
+                    opportunity to exercise your brain and experience the satisfaction of solving it.</p>
+            </div>
+        </article>
+    </main>
+
+
+    <script>
+        const collapseTrigger = document.querySelector('.collapse-trigger');
+        const collapseContent = document.querySelector('.collapse-content');
+        collapseTrigger.addEventListener('click', function () {
+            collapseContent.classList.toggle('show');
+            const arrowIcon = document.querySelector('.arrow-icon');
+            arrowIcon.classList.toggle('rotate');
+            if (arrowIcon.classList.contains('rotate')) {
+                arrowIcon.innerHTML = '&#9650;';
+            } else {
+                arrowIcon.innerHTML = '&#9660;';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

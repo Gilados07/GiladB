@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="/">Home</a></li>
+                <li class="li"><a class="a" href="RiddleDay.html">Daily riddle</a></li>
+                <li class="li"><a class="a" href="Riddle-of-the-month.html">Monthly riddle</a></li>
+                <li class="li"> <a class="a" href="about-us.html">About Us</a></li>
+                <li class="li"><a class="a" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1 class="collapse-trigger">The Best Riddle Solver Ever:<br/><span class="alittle"> The Story of Henry Ernest Dudeney </span><span class="arrow-icon">&#9660;</span></h1>
+            <div class="collapse-content">
+                <p>Henry Ernest Dudeney is widely considered to be the best riddle solver of all time. Born in 1857 in England, Dudeney was a puzzle creator, mathematician, and author who is best known for his work in the field of recreational mathematics.</p>
+                <P>Dudeney's love of puzzles started when he was young. As a boy, he was fascinated by arithmetic and geometry and would spend hours solving puzzles and brain teasers. As he grew older, Dudeney's passion for puzzles continued to grow, and he began creating his own riddles and puzzles.</P>
+                <P>Use misdirection: Misdirection is a technique that can make your riddle more challenging and fun to solve. For example, you might use a play on words or use a phrase that has a double meaning to lead the solver in the wrong direction.</P>
+                <p>In 1902, Dudeney published a book called "The Canterbury Puzzles," which became an instant hit. The book was filled with riddles, brain teasers, and puzzles of all kinds, and it showcased Dudeney's incredible talent for creating and solving puzzles.</p>
+                <p>Dudeney's legacy continues to inspire puzzle enthusiasts today. His work has been the subject of many books and articles, and his puzzles continue to challenge and entertain people around the world.</p>
+                <p>In conclusion, Henry Ernest Dudeney is widely considered to be the best riddle solver of all time. His love of puzzles and talent for creating brain teasers has left a lasting impact on the field of recreational mathematics. If you're a fan of riddles and puzzles, you owe it to yourself to check out Dudeney's work and see why he is considered the best of the best.</p>
+            </div>
+        </article>
+    </main>
+
+
+    <script>
+        const collapseTrigger = document.querySelector('.collapse-trigger');
+        const collapseContent = document.querySelector('.collapse-content');
+        collapseTrigger.addEventListener('click', function () {
+            collapseContent.classList.toggle('show');
+            const arrowIcon = document.querySelector('.arrow-icon');
+            arrowIcon.classList.toggle('rotate');
+            if (arrowIcon.classList.contains('rotate')) {
+                arrowIcon.innerHTML = '&#9650;';
+            } else {
+                arrowIcon.innerHTML = '&#9660;';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

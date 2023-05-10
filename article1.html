@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="/">Home</a></li>
+                <li class="li"><a class="a" href="RiddleDay.html">Daily riddle</a></li>
+                <li class="li"><a class="a" href="Riddle-of-the-month.html">Monthly riddle</a></li>
+                <li class="li"> <a class="a" href="about-us.html">About Us</a></li>
+                <li class="li"><a class="a" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1 class="collapse-trigger">An Introduction to :<br/><span class="alittle"> the Art of Puzzles</span><span class="arrow-icon">&#9660;</span></h1>
+            <div class="collapse-content">
+                <p>Riddles are puzzles that challenge and entertain us. They come in different forms and have been
+                    around for centuries. Riddles are usually word-based, but they can also involve pictures, symbols,
+                    or numbers. They are a great way to exercise your brain and improve your problem-solving skills.</p>
+                <p>Riddles are found in many cultures and have been passed down through generations. They can be used
+                    for entertainment, education, or to convey a deeper meaning. Riddles are often used in literature,
+                    music, and movies, and they have become a popular form of entertainment in recent years. </p>
+                <p>There are different types of riddles, including puns, brain teasers, charades, and enigmas. Puns are
+                    word-based riddles that play on the double meanings of words. Brain teasers are puzzles that require
+                    logic or critical thinking to solve. Charades are riddles that involve acting out a word or phrase.
+                    Enigmas are complex riddles that require a lot of knowledge and creativity to solve.</p>
+                <p>In conclusion, riddles are an ancient art form that continues to captivate and entertain us to this
+                    day. They are a great way to exercise your brain, improve your problem-solving skills, and have fun.
+                    Whether you are looking for a challenge or just a way to pass the time, riddles are a great way to
+                    do it. So next time you are looking for a good puzzle, try out a riddle and see if you can solve it!
+                </p>
+            </div>
+        </article>
+    </main>
+
+
+    <script>
+        const collapseTrigger = document.querySelector('.collapse-trigger');
+        const collapseContent = document.querySelector('.collapse-content');
+        collapseTrigger.addEventListener('click', function () {
+            collapseContent.classList.toggle('show');
+            const arrowIcon = document.querySelector('.arrow-icon');
+            arrowIcon.classList.toggle('rotate');
+            if (arrowIcon.classList.contains('rotate')) {
+                arrowIcon.innerHTML = '&#9650;';
+            } else {
+                arrowIcon.innerHTML = '&#9660;';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

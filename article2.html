@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="/">Home</a></li>
+                <li class="li"><a class="a" href="RiddleDay.html">Daily riddle</a></li>
+                <li class="li"><a class="a" href="Riddle-of-the-month.html">Monthly riddle</a></li>
+                <li class="li"> <a class="a" href="about-us.html">About Us</a></li>
+                <li class="li"><a class="a" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1 class="collapse-trigger">Riddles in Today's Era:<br/> <span class="alittle"> Modern Twist on an Ancient Art</span><span class="arrow-icon">&#9660;</span></h1>
+            <div class="collapse-content">
+                <p>Riddles have been a part of human culture for thousands of years. They have been used to entertain,
+                    challenge, and even teach. In today's era, riddles continue to be a popular pastime, but they have
+                    also taken on a modern twist.</p>
+                <P>Gone are the days of simple riddles that could be solved with a single answer. Today's riddles are
+                    more complex, incorporating wordplay, puns, and cultural references. They often require critical
+                    thinking and outside-the-box solutions.</P>
+                <P>One reason for the evolution of riddles is the rise of technology. With the internet at our
+                    fingertips, it's easier than ever to access information and find answers to traditional riddles. To
+                    keep things challenging, riddle creators have had to up their game and create riddles that are not
+                    easily solved with a simple Google search.</P>
+                <p>Another reason for the modern twist on riddles is the changing cultural landscape. Riddles that were
+                    once relevant may no longer be applicable in today's society. For example, a riddle about a horse
+                    and carriage would have been well-understood in the 19th century, but it might not make sense to
+                    someone in the 21st century.</p>
+                <p>Instead, riddles today often incorporate pop culture references or</p>
+            </div>
+        </article>
+    </main>
+
+
+    <script>
+        const collapseTrigger = document.querySelector('.collapse-trigger');
+        const collapseContent = document.querySelector('.collapse-content');
+        collapseTrigger.addEventListener('click', function () {
+            collapseContent.classList.toggle('show');
+            const arrowIcon = document.querySelector('.arrow-icon');
+            arrowIcon.classList.toggle('rotate');
+            if (arrowIcon.classList.contains('rotate')) {
+                arrowIcon.innerHTML = '&#9650;';
+            } else {
+                arrowIcon.innerHTML = '&#9660;';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

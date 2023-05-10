@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Title</title>
+    <link rel="stylesheet" href="articles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="/">Home</a></li>
+                <li class="li"><a class="a" href="RiddleDay.html">Daily riddle</a></li>
+                <li class="li"><a class="a" href="Riddle-of-the-month.html">Monthly riddle</a></li>
+                <li class="li"> <a class="a" href="about-us.html">About Us</a></li>
+                <li class="li"><a class="a" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <h1 class="collapse-trigger">The Art of Creating Riddles:<br/><span class="alittle"> Tips and Techniques for Crafting a Good Brain Teaser</span><span class="arrow-icon">&#9660;</span></h1>
+            <div class="collapse-content">
+                <p>Creating a good riddle is an art form that requires creativity, cleverness, and a bit of mystery. If you're interested in crafting your own riddles, here are some tips and techniques to help you get started.</p>
+                <P>Start with a clear idea or concept: A good riddle should have a clear idea or concept that is easy to understand. Once you have a concept, you can start brainstorming wordplay, puns, and other creative ways to express it.</P>
+                <P>Use misdirection: Misdirection is a technique that can make your riddle more challenging and fun to solve. For example, you might use a play on words or use a phrase that has a double meaning to lead the solver in the wrong direction.</P>
+                <p>Be concise: A good riddle should be concise and to the point. Avoid using too many words or unnecessary details that might confuse the solver.</p>
+                <p>Use imagery: Imagery can be a powerful tool when creating a riddle. By using vivid and descriptive language, you can paint a picture in the solver's mind and make the riddle more engaging.</p>
+                <p>Test your riddle: Once you've created a riddle, test it out on friends and family. This can help you gauge the difficulty level and see if there are any parts that might be confusing or unclear.</p>
+                <p>In conclusion, creating a good riddle is an art form that requires a combination of creativity and cleverness. By starting with a clear concept, using misdirection, being concise, using imagery, and testing your riddle, you can create a brain teaser that will challenge and entertain others. So get creative and start crafting your own riddles today!</p>
+            </div>
+        </article>
+    </main>
+
+
+    <script>
+        const collapseTrigger = document.querySelector('.collapse-trigger');
+        const collapseContent = document.querySelector('.collapse-content');
+        collapseTrigger.addEventListener('click', function () {
+            collapseContent.classList.toggle('show');
+            const arrowIcon = document.querySelector('.arrow-icon');
+            arrowIcon.classList.toggle('rotate');
+            if (arrowIcon.classList.contains('rotate')) {
+                arrowIcon.innerHTML = '&#9650;';
+            } else {
+                arrowIcon.innerHTML = '&#9660;';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
