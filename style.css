@@ -116,8 +116,12 @@ body {
   color: #ffffff;
   font-size: 22px;
 }
-
-
+.amore{
+  font-family: CustomFont;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
 header {
   color: #000000;
   text-align: center;
@@ -447,6 +451,25 @@ color: rgb(0, 0, 0)
 }
 .Home_Button:hover{
   color:aquamarine; /* Dark green */
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none; 
+}
+.alist{
+  font-family: CustomFont;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+.alist:hover{
+  color: #ffffff;
+  font-size: 20px;
 }
 @media only screen and (max-width: 600px) {
   body {

@@ -118,3 +118,28 @@
   margin-right: auto;
   display: block;
 }
+.amore{
+  font-family: CustomFont;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none; 
+}
+.alist{
+  font-family: CustomFont;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+.alist:hover{
+  color: #ffffff;
+  font-size: 20px;
+}
