@@ -94,6 +94,7 @@ function updateTimer() {
 
 // JavaScript for checking and displaying the result
 document.getElementById("submit-btn").addEventListener("click", function() {
+  const popup = document.getElementById('popup');
 	var userAnswer = document.getElementById("myText").value.toLowerCase();
 	var correctAnswer = "echo"; // Change this to the correct answer
 	var correctanswerHard = "circle" // Change this to the correct answer
@@ -101,8 +102,7 @@ document.getElementById("submit-btn").addEventListener("click", function() {
 	var myTextInput = document.getElementById("myText"); // Add reference to the input field
   
 	if (userAnswer === correctAnswer ||userAnswer ===correctanswerHard ) {
-	  myTextInput.style.borderColor = "#00FF00"; // Set border color to green
-    myTextInput.style.borderWidth="5px";
+    showPopup();
 	} else {
 	  myTextInput.style.borderColor = "red"; // Set border color to red
     myTextInput.style.borderWidth="5px";
@@ -111,6 +111,12 @@ document.getElementById("submit-btn").addEventListener("click", function() {
     myTextInput.style.borderColor = "black"; // Reset border color to black
     myTextInput.style.borderWidth = "2px"; // Reset border width to default
   });
+  function showPopup() {
+    popup.style.display = 'block';
+  }
+  closeBtn.addEventListener('click', function() {
+    popup.style.display = 'none';
+  })
 });
     
 const submitBtn = document.querySelector(".Submit2");

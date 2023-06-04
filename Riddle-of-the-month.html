@@ -59,16 +59,7 @@
 		  </li>
 		</ul>
 	  </nav>
-	  	<script type="text/javascript">
-		atOptions = {
-			'key' : '8d6714b083bb6582f18135753c0e2f8e',
-			'format' : 'iframe',
-			'height' : 60,
-			'width' : 468,
-			'params' : {}
-		};
-		document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplaynetwork.com/8d6714b083bb6582f18135753c0e2f8e/invoke.js"></scr' + 'ipt>');
-	</script>
+	  	
 	<div >
 		<header>
 			<h1 class="ContactUsHead">Riddle of the Month</h1>
@@ -83,28 +74,38 @@
 					<button class="hint-button" id="hintButton">Hint</button>
 					<p class="hint-text">I own a triangle</p>
 					<input class="InsertText" type="text" id="myTextXH" name="myTextXH" placeholder="What's your answer?">
-					<button class="Submit3" id="submit-btn3">Submit</button>
+					<button class="Submit" id="submit-btn3">Submit</button>
 					<p id="result-text3"></p>
+					<div id="popup" class="popup">
+						<button id="closeBtn" class="closeBtn">×</button>
+						<h2>Congratulations!</h2>
+						<p>You got the answer right!</p>
+					  </div>
 					<script>
 						// JavaScript for checking and displaying the result
 					document.getElementById("submit-btn3").addEventListener("click", function() {
+					const popup = document.getElementById('popup');
 					var userAnswer = document.getElementById("myTextXH").value.toLowerCase();
 					var correctAnswerXH = "fire"; // Change this to the correct answer
 					var resultText = document.getElementById("result-text3");
 					var myTextInput = document.getElementById("myTextXH"); // Add reference to the input field
   
 					if (userAnswer === correctAnswerXH) {
-	  					myTextInput.style.borderColor = "#00FF00"
-						myTextInput.style.borderWidth="5px"; // Set border color to green
+						showPopup();
 					} else {
 	  					myTextInput.style.borderColor = "red"; // Set border color to red
 						  myTextInput.style.borderWidth="5px";
-					audio.play();
 					}
 					myTextInput.addEventListener("input", function() {
 							myTextInput.style.borderColor = "black"; // Reset border color to black
 							myTextInput.style.borderWidth = "2px"; // Reset border width to default
-						});
+						})
+						function showPopup() {
+    					popup.style.display = 'block';
+  						}
+  						closeBtn.addEventListener('click', function() {
+    					popup.style.display = 'none';
+  						});
 });
 					</script>
 				</div>

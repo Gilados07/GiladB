@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/BalooBhaijaan2-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'CustomFont2';
+    src: url('./fonts/BalooBhaijaan2-Regular.ttf');
+  }
+  
+  body {
+    font-family: CustomFont;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #cdcccc;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  #challenge {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  #celebrityImage {
+    width: 100%;
+    filter: blur(10px);
+    margin: 0px;
+    border-radius:50px;
+    border:5px solid #ff0066;
+    
+  }
+  
+  input[type="text"] {
+    margin-top: 40px;
+    font-size: 25px;
+    width: 100%;
+  }
+  .Submit3{
+  font-family: CustomFont;
+  border: none;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #ff0066;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.Submit3:hover{
+  background-color:#cc004d;
+}
+  
+  p#result {
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .ContactUsHead{
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+  }
+  .nav {
+    background-color:  rgba(228, 9, 9, 0.272);
+    background-color:#f15ef4;
+    background-color: #ff0066 ;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100vw;
+  }
+  
+  .ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .li {
+    margin: 0 10px;
+  }
+  
+  .a {
+    font-family: CustomFont;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+  }
+  .a:hover{
+    color: aquamarine;
+    color: #ffffff;
+    font-size: 22px;
+  }
+  .amore{
+    font-family: CustomFont;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    list-style: none; 
+  }
+  .alist{
+    font-family: CustomFont;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+    text-align: center;
+  }
+  .alist:hover{
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .InsertText{
+    border: 3px solid rgb(255, 255, 255);
+    font-family: CustomFont;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+  }
+  .InsertText::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 25px;    
+}
+.ImgSize{
+    width: 284px;
+    height: 284px;
+
+}
