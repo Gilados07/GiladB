@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Number</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Guess_The_Number.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <div class="container">
+      <p>Guess three 1-digit numbers (0-9):</p>
+      <div class="guess-container">
+        <div class="guess-input">
+          <input type="text" id="guessInput1" maxlength="1" placeholder="">
+          <div id="resultText1"></div>
+        </div>
+        <div class="guess-input">
+          <input type="text" id="guessInput2" maxlength="1" placeholder="">
+          <div id="resultText2"></div>
+        </div>
+        <div class="guess-input">
+          <input type="text" id="guessInput3" maxlength="1" placeholder="">
+          <div id="resultText3"></div>
+        </div>
+      </div>
+      <button onclick="checkGuess()">Guess</button>
+      <div id="resultText"></div>
+      <button onclick="refreshGame()">Refresh</button>
+      
+      
+      
+
+    <script src="Guess_The_Number.js"></script>
+  </body>
+  </html>

@@ -53,34 +53,21 @@ Hard.addEventListener('click', () => {
 var timer = document.getElementById("timer");
 var interval = setInterval(updateTimer, 1000); // Update the timer every 1 second
 
-function Switch_Riddles_and_hints(){
-  //document.querySelector('.riddle-title').textContent = riddle_easy_array[i]
-  riddletitle.textContent = riddle_easy_array[i]
-  hinttext.textContent = hint_easy_array[i]
-  
-  i+=1
-}
-
 // Function to update the timer
 function updateTimer() {
-  //Switch_Riddles_and_hints()
   var now = new Date(); // Get the current date and time
   var target = new Date(); // Set the target time to the current time
-  var targetHour = now.getHours() < 12 ? 12 : 0; // Set the target hour to the nearest 12:00 PM or 12:00 AM based on current hour
+  var targetHour = now.getHours() < 12 ? 12 : 0; // Set the target hour to 12:00 PM if the current hour is before 12, otherwise set it to 12:00 AM
   var nextDay = now.getHours() >= 12; // Check if the current time is after 12:00 PM to determine if the target time should be set for the next day
-  target.setDate(target.getDate() + (nextDay ? 1 : 0)); // Move to the next day if current time is after 12:00 PM
-  target.setHours(targetHour, 0, 0, 0); // Set the target time to the nearest 12:00 PM or 12:00 AM
+  target.setDate(target.getDate() + (nextDay ? 1 : 0)); // Move to the next day if the current time is after 12:00 PM
+  target.setHours(targetHour, 0, 0, 0); // Set the target time to 12:00 PM or 12:00 AM
 
   var timerValue = Math.floor((target.getTime() - now.getTime()) / 1000); // Calculate the remaining time in seconds
 
   if (timerValue <= 0) {
-    
     clearInterval(interval); // Stop the timer when it reaches 0
     timer.textContent = '00:00:00';
-    // Set the target time to the next corresponding time for the next iteration
-    targetHour = targetHour === 0 ? 12 : 0;
-    target.setDate(target.getDate() + 1); // Move to the next day
-    target.setHours(targetHour, 0, 0, 0);
+    target.setHours(targetHour === 0 ? 12 : 0, 0, 0, 0); // Set the target time to the next 12:00 PM or 12:00 AM
     interval = setInterval(updateTimer, 1000); // Start the timer again for the next iteration
   }
 
@@ -91,6 +78,7 @@ function updateTimer() {
   // Display hours, minutes, and seconds with leading zeros if needed
   timer.textContent = ('0' + hours).slice(-2) + ':' + ('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2);
 }
+
 
 // JavaScript for checking and displaying the result
 document.getElementById("submit-btn").addEventListener("click", function() {

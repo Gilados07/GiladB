@@ -16,7 +16,8 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #cdcccc;
+    background-color: #dddcdc;
+    background-color: #EEEAEA;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -138,7 +139,7 @@
   color: #ffffff;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  font-size: 15px;
+  font-size: 12px;
 }
 .alist:hover{
   color: #ffffff;

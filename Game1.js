@@ -25,7 +25,7 @@ function checkGuess() {
     remainingGuesses--;
     result.textContent = `Wrong guess. ${remainingGuesses} ${remainingGuesses === 1 ? 'guess' : 'guesses'} remaining.`;
     result.style.color = '#ff0000';
-    blurValue -= 1.5;
+    blurValue -= 0.7;
     celebrityImage.style.filter = `blur(${blurValue}px)`;
     if (remainingGuesses === 0) {
       revealAnswer();

@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/BalooBhaijaan2-Bold.ttf');
+  }
+  
+  @font-face {
+    font-family: 'CustomFont2';
+    src: url('./fonts/BalooBhaijaan2-Regular.ttf');
+  }
+  
+  body {
+    background-color: #EEEAEA;
+  }
+  
+  .ContactUsHead {
+    width: 100%;
+    display: flex;
+    background: #EF8354;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    padding: 3vh 0; /* Add padding for spacing */
+  }
+  
+  .RiddledayHeadline {
+    position: relative; /* Change to relative */
+    width: 90%; /* Use a percentage value */
+    max-width: 800px; /* Set a maximum width to prevent excessive scaling on larger screens */
+    font-family: 'CustomFont';
+    font-size: 5vw; /* Use relative units */
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin: 0; /* Reset default margins */
+  }
+  
+  
+  .dot {
+    position: absolute;
+    width: 13%; /* Use a percentage value */
+    padding-top: 13%; /* Maintain the aspect ratio */
+    left: -1%; /* Use a percentage value */
+    top: 15%; /* Use a percentage value */
+    border-radius: 50%;
+    background: #EEEAEA;
+  }
+  
+  
+  .dot2 {
+    position: absolute;
+    width: 13%; /* Use a percentage value */
+    padding-top: 13%; /* Maintain the aspect ratio */
+    left: 10%; /* Use a percentage value */
+    top: 10%; /* Use a percentage value */
+    border-radius: 50%;
+    background: #EEEAEA;
+  }
+  
+  .dot3 {
+    position: absolute;
+    top: 2vh; /* Use relative units */
+    right: 2vw; /* Use relative units */
+    border-radius: 50%;
+    width: 2vw; /* Use relative units */
+    height: 2vw; /* Use relative units */
+    background: #000000;
+  }
+  
+  .dot4 {
+    position: absolute;
+    top: 2vh; /* Use relative units */
+    right: 4vw; /* Use relative units */
+    border-radius: 50%;
+    width: 2vw; /* Use relative units */
+    height: 2vw; /* Use relative units */
+    background: #000000;
+  }
+  
+  .dot5 {
+    position: absolute;
+    top: 2vh; /* Use relative units */
+    right: 6vw; /* Use relative units */
+    border-radius: 50%;
+    width: 2vw; /* Use relative units */
+    height: 2vw; /* Use relative units */
+    background: #000000;
+  }
+  
+  .TryPic {
+    position: absolute;
+    width: 8%; /* Use a percentage value */
+    left: 13%; /* Use a percentage value */
+    top: 12%; /* Use a percentage value */
+    border-radius: 50%;
+    background: #EEEAEA;
+  }
+  
+  .EasyHard2,
+  .EasyHard1 {
+    border-radius: 40px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    max-width: 400px;
+    height: 10vh;
+    margin: 0;
+    font-family: 'CustomFont2';
+    font-weight: 800;
+    font-size: 3vw;
+    background: #EF8354;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .EasyHard1 {
+    left: 39%; /* Adjust the horizontal position */
+  }
+  
+  .EasyHard2 {
+    left: 61%; /* Adjust the horizontal position */
+  }
+  
+
+  .riddle-title {
+    position: relative;
+    font-family: 'CustomFont2';
+    font-size: 6vh;
+    text-align: center;
+    color: #000000;
+    margin-top: 10%;
+
+  }
+  
+  .Button_Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hint-button {
+    position: relative;
+    font-family: 'CustomFont2';
+    font-size: 5vh;
+    text-align: center;
+    color: #000000;
+    border: none;
+    background: #EEEAEA;
+    margin-top: 2%;
+  }
+  
+  
+  

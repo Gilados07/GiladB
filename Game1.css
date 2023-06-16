@@ -17,7 +17,8 @@
     font-family: CustomFont;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #cdcccc;
+    background-color: #dddcdc;
+    background-color: #EEEAEA;
   }
   
   .container {
@@ -134,7 +135,7 @@
     color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
   }
   .alist:hover{
